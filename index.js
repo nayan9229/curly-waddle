@@ -3,7 +3,7 @@ const fs = require('fs')
 const secondsForExtensionToLoad = 1
 // const CRX_PATH = './browser-extension'
 // const CRX_PATH = './jsonviever'
-const CRX_PATH = require('path').join(__dirname, 'browser-extension');
+const CRX_PATH = require('path').join(__dirname, 'jsonviever');
 
 // (async () => {
 //   const browser = await puppeteer.launch();
