@@ -1,0 +1,60 @@
+body {
+    white-space: pre;
+    font-family: monospace;
+}
+
+.property {
+    font-weight: bold;
+}
+
+.type-null {
+    color: gray;
+}
+
+.type-boolean {
+    color: firebrick;
+}
+
+.type-number {
+    color: blue;
+}
+
+.type-string {
+    color: green;
+}
+
+.callback-function {
+    color: gray;
+}
+
+.collapser:after {
+    font-size: 13px;
+    content: "-";
+}
+
+.collapsed > .collapser:after {
+    font-size: 13px;
+    content: "+";
+}
+
+.ellipsis:after {
+    content: attr(data-value);
+}
+
+.collapsible {
+    margin-left: 2em;
+}
+
+.hoverable {
+    padding: 1px 2px;
+    border-radius: 2px;
+}
+
+.hovered {
+    background-color: rgba(235, 238, 249, 1);
+}
+
+.collapser {
+    padding-right: 6px;
+    padding-left: 6px;
+}
