@@ -81,7 +81,6 @@ const urls = [`https://reqres.in/api/users`, `http://dummy.restapiexample.com/ap
             await targetPage.goto(url, { waitUntil: 'networkidle2' }) // load the url
             await waitSeconds(5) // let it breathe
             await targetPage.screenshot({ path: `./screenshot/json_${count}.png` });
-            await browser.close();
             console.log('[Done]', `DONE ${count}`);
             count += 1;
 
@@ -89,6 +88,7 @@ const urls = [`https://reqres.in/api/users`, `http://dummy.restapiexample.com/ap
             console.log(e);
         }
     }
+    await browser.close();
 })();
 
 // in this environment some things need to pause
